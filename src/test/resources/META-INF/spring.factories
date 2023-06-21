@@ -1,0 +1,2 @@
+org.springframework.test.context.ContextCustomizerFactory=\
+com.yunkaitech.lottochart.config.SqlTestContainersSpringContextCustomizerFactory
