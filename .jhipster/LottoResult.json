@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "entityTableName": "lotto_result",
+  "fields": [
+    {
+      "fieldName": "drawDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "drawNumber",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mainNumbers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "supplimentNumbers",
+      "fieldType": "String"
+    }
+  ],
+  "name": "LottoResult",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "lotto",
+      "relationshipName": "lotto",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

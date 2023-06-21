@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "entityTableName": "lotto_rule",
+  "fields": [
+    {
+      "fieldName": "mainNumbers",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "supplimentNumbers",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "LottoRule",
+  "relationships": [
+    {
+      "otherEntityName": "lotto",
+      "relationshipName": "lotto",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}
