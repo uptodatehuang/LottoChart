@@ -1,0 +1,30 @@
+entity Lotto {
+    name String,
+    country String,
+    state String
+}
+
+entity LottoRule {
+    mainNumbers Integer,
+    supplimentNumbers Integer
+}
+
+entity LottoResult {
+	drawDate Instant,
+    drawNumber Integer,
+    mainNumbers String,
+    supplimentNumbers String
+}
+
+relationship OneToOne {
+	LottoRule{lotto} to Lotto
+}
+
+relationship OneToMany {
+	LottoResult{lotto} to Lotto
+}
+
+paginate LottoResult with infinite-scroll
+
+service all with serviceImpl
+
