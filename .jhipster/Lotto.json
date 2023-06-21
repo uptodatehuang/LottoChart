@@ -1,0 +1,21 @@
+{
+  "applications": "*",
+  "entityTableName": "lotto",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Lotto",
+  "relationships": [],
+  "service": "serviceImpl"
+}
